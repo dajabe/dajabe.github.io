@@ -5,7 +5,6 @@ body {
 }
 
 #content {
-  background-color: #ffffb5;
   max-width: 80%;
   margin: 0px auto 0px auto;
   padding: 5px;
@@ -14,14 +13,27 @@ body {
 #page-title {
   margin: 0px;
   padding: 10px 0px 10px 0px;
+  flex-grow: 1;
 
   font-size: 2.5em;
   text-transform: uppercase;
+  text-align: center;
+}
+
+#page-title a {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0px 0px 15px 15px;
+  padding: 10px;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
 }
 
 #menu-bar {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  vertical-align ;
+
 }
 
 .menu-item a {
@@ -38,9 +50,16 @@ nav {
 }
 
 header {
-  background-color: #ffffb5;
+  /* background-color: #ffffb5; */
+  background-image: url('../img/hero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: rgb(0, 0, 0);
   margin: 0px;
   padding: 0px;
+  min-height: 200px;
 
+  display: flex;
+  flex-direction: column;
 }
