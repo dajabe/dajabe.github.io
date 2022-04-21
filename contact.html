@@ -12,7 +12,7 @@
     <h1 id="page-title">Dajabe's Home</h1>
     <nav role="navigation">
       <div id="menu-bar">
-        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="index.html">Hello!</a></div>
         <div class="menu-item"><a href="blog/index.html">Blogs</a></div>
         <div class="menu-item"><a href="contact.html">Contact</a></div>
       </div>
@@ -20,9 +20,23 @@
   </header>
   <div id="content">
     <h1>Get in touch!</h1> 
-    <p> Name</p>
-    <p> Email </p>
-    <p> Message </p>
+    <form class="contact-form">
+      <div class="name">
+        <label for="name">Name</label>
+        <input type="text" id="first-name" name="first-name">
+      </div>
+      <div class="email">
+        <label for="email-address">Email</label>
+        <input type="email" id="email-address" name="email-address">
+      </div>
+      <div class="message">
+        <label for="message-text">Message</label>
+        <input type="text" id="message-text" name="message-text">
+      </div>
+      <div class="submit-button">
+        <input type="submit">
+      </div>
+    </form>
   </div>
   
 </body>
