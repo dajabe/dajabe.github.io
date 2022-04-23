@@ -8,9 +8,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
+  align-self: center;
+  max-width: 1200px;
+  width: 80%;
   margin: 0px auto 0px auto;
   padding: 5px;
+}
+
+#blog-content {
+  text-align: left;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+}
+
+dl {
+  display: flex;
+  flex-flow: wrap;
+}
+
+dt {
+  text-decoration: underline;
+  font-weight: bold;
+  flex-basis: 30%;
+  text-align: right;
+  margin: 5px 10px 5px 10px;
+}
+
+dd {
+  flex-basis: 60%;
+  flex-grow: 1;
+  text-align: left;
+  margin: 5px 10px 5px 10px;
 }
 
 #page-title {
