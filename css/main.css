@@ -47,6 +47,10 @@ body {
   text-transform: uppercase;
 }
 
+#publish-date {
+  
+}
+
 nav {
   background-color: rgb(0, 0, 0, 0.6);
   border-top-style: solid;
@@ -68,6 +72,10 @@ header {
 
   display: flex;
   flex-direction: column;
+}
+
+.blog-header {
+  
 }
 
 .contact-form {
