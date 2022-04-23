@@ -47,8 +47,31 @@ body {
   text-transform: uppercase;
 }
 
+.back-link a {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
 #publish-date {
-  
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+#blog-title {
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -75,7 +98,13 @@ header {
 }
 
 .blog-header {
-  
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background-color: rgb(183, 235, 255, 0.4);
+  background-image: none;
+  align-items: center;
+  min-height: auto;
 }
 
 .contact-form {
