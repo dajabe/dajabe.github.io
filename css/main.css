@@ -1,47 +1,4 @@
-body {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  max-width: 1200px;
-  width: 80%;
-  margin: 0px auto 0px auto;
-  padding: 5px;
-}
-
-#blog-content {
-  text-align: left;
-  max-width: 1200px;
-  width: 80%;
-  margin: 0px auto 0px auto;
-  padding: 5px;
-}
-
-dl {
-  display: flex;
-  flex-flow: wrap;
-}
-
-dt {
-  text-decoration: underline;
-  font-weight: bold;
-  flex-basis: 30%;
-  text-align: right;
-  margin: 5px 10px 5px 10px;
-}
-
-dd {
-  flex-basis: 60%;
-  flex-grow: 1;
-  text-align: left;
-  margin: 5px 10px 5px 10px;
-}
+/* header and title stylings */
 
 #page-title {
   margin: 0px;
@@ -60,6 +17,47 @@ dd {
   margin: 30px;
   text-decoration: none;
   color: black;
+}
+
+#blog-title {
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  /* background-color: #ffffb5; */
+  background-image: url('../img/hero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  padding: 0px;
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background-color: rgb(183, 235, 255, 0.4);
+  background-image: none;
+  align-items: center;
+  min-height: auto;
+}
+
+nav {
+  background-color: rgb(0, 0, 0, 0.6);
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: rgb(37, 37, 37);
+  padding: 5px;
 }
 
 #menu-bar {
@@ -94,46 +92,34 @@ dd {
   color: black;
 }
 
-#blog-title {
-  border-radius: 15px 15px 15px 15px;
-  padding: 10px;
+/* body and content */
+
+body {
+  text-align: center;
   margin: 0px;
-  text-decoration: none;
-  color: black;
+  padding: 0px;
 }
 
-nav {
-  background-color: rgb(0, 0, 0, 0.6);
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-color: rgb(37, 37, 37);
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0px auto 0px auto;
   padding: 5px;
 }
 
-header {
-  /* background-color: #ffffb5; */
-  background-image: url('../img/hero.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: rgb(0, 0, 0);
-  margin: 0px;
-  padding: 0px;
-  min-height: 200px;
-
-  display: flex;
-  flex-direction: column;
+#blog-content {
+  text-align: left;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0px auto 0px auto;
+  padding: 5px;
 }
 
-.blog-header {
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  background-color: rgb(183, 235, 255, 0.4);
-  background-image: none;
-  align-items: center;
-  min-height: auto;
-}
+/* contact form */
 
 .contact-form {
   width: 50%;
@@ -146,4 +132,26 @@ header {
 #message-text {
   width: 100%;
   height: 150px;
+}
+
+/* lists */
+
+dl {
+  display: flex;
+  flex-flow: wrap;
+}
+
+dt {
+  text-decoration: underline;
+  font-weight: bold;
+  flex-basis: 30%;
+  text-align: right;
+  margin: 5px 10px 5px 10px;
+}
+
+dd {
+  flex-basis: 60%;
+  flex-grow: 1;
+  text-align: left;
+  margin: 5px 10px 5px 10px;
 }
