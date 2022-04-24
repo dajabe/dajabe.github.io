@@ -65,8 +65,6 @@ dd {
 #menu-bar {
   display: flex;
   justify-content:center;
-  vertical-align ;
-
 }
 
 .menu-item a {
