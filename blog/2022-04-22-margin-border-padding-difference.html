@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dajabe's Home - Margins, padding, and borders what is the difference?</title>
     <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/example.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -31,22 +32,221 @@
           <dd>The spacing between the elements border and the conent</dd>
         </dl>
       </p>
+      <p>
+        Below is a visual representation of these properties. Content in the center is what you are displaying, this could be a paragraph of text, and image, or a link. Around that you have your padding which is the spacing between the border and the content but is also considered part of the content. Then you have your border which allows you to add a border color to help visually seperate or highlight your content. Finally we have the margin which provides spacing an element and other elements.
+      </p>
+      <img class="blog-content-image" src="../img/element-properties.webp" alt="HTML Element properties">
+      <h3>Margins</h3>
+      <p>For this we will start with margins as I believe that is the easiest property to understand. Take our example boxes below that we will use in our example. We have blue content box and a red content box. Currently they have no padding or margins. Our content is the text stating the color of the box:</p>
+      <div class="example">
+        <div class="example-box red-box no-padding-margin">Red Content</div>
+        <div class="example-box blue-box no-padding-margin">Blue Content</div>
+      </div>
+      <p>Here is the code for the HTML that is used to display this. Simplified a little for this example this will work the same on your own webpage. The <code>div</code> tag used here is the element that we are using in the example but these techniques will work on all HTMl elements. We have given each it's own class so we can apply styles to them seperately.</p>
+      <pre class="example-code"><code>
+        &lt;div class="red-box"&gt;Red Content&lt;/div&gt;
+        &lt;div class="blue-box"&gt;Blue Content&lt;/div&gt;
+      </code></pre>
+
+      <p>This is the style's that we have applied to these boxes. We have a section for all <code>div</code> elements and then two sections for specific divs one for our red box and one for our blue box.</p>
+
+      <pre class="example-code"><code>
+        &lt;style>
+          div {
+            text-align: center;
+            font-weight: bold;
+          }
+          .blue-box {
+            background-color: lightblue;
+            padding: 0px;
+            margin: 0px;
+          }
+          .red-box {
+            background-color: lightcoral;
+            padding: 0px;
+            margin: 0px;
+          }
+        &lt;/style>
+      </code>
+      </pre>
+      <p>
+        Now we are going to give the red box a margin of 10 pixels. This is a fixed number of pixels on the screen that we want it to be spaced and we are going to apply this margin to the right hand side of the element.
+      </p>
+      <pre class="example-code"><code>
+        &lt;style>
+          .red-box {
+            background-color: lightcoral;
+            padding: 0px;
+            margin-right: 10px;
+          }
+        &lt;/style>
+      </code>
+      </pre>
+      <div class="example">
+        <div ></div>
+        <div class="example-box red-box ex-margin-10-right">Red Content</div>
+        <div class="example-box blue-box no-padding-margin">Blue Content</div>
+      </div>
+      <p>So you can see here that we now have a 10px gap between our blue content and our red content. It definitely makes it look a bit better so why don't we apply a 10px margin around all edges for both boxes.</p>
+      <pre class="example-code"><code>
+        &lt;style>
+          .blue-box {
+            background-color: lightblue;
+            padding: 0px;
+            margin: 10px;
+          }
+          .red-box {
+            background-color: lightcoral;
+            padding: 0px;
+            margin: 10px;
+          }
+        &lt;/style>
+      </code>
+      </pre>
+      <div class="example">
+        <div ></div>
+        <div class="example-box red-box ex-margin-10">Red Content</div>
+        <div class="example-box blue-box ex-margin-10">Blue Content</div>
+      </div>
+      <p>This looks great... but wait did you notice something about the gap between the Red and Blue content? It is now bigger and that is because the margin between the two is the sum of both margins. So we now have a 20px gap between our two elements.</p>
+      <p>We could adjust the margin on the adjacent sides only to bring it closer together or further away but that is out of the scope of this post so we are going to leave it as is.</p>
+      
       <h3>Borders</h3>
       <p>
-        Borders have a default size of 0px but you can set the size of the border to any width you like.
+        Next we are going to tackle borders as it will make it easier for us to see the changes we make with our padding. Borders have a default size of 0px but you can set the size of the border to any width you like. Let's give our border a width of 10px and a solid style for the red and dashed for the blue. We have to specify a color for the border as well and we'll do that with <code>border-color</code>. 
       </p>
-      <p>
-        You can also give the border a style such as dashes or dots:
-      </p>
-      <h3>Margins</h3>
-      <p>
-        Note that margins are added together. So if you have two items, one with a margin of 20px and the other with a margin of 10px, then the total distance between their borders will be 30px
-      </p>
-      <p></p>
-      <h3>Padding</h3>
-      Padding allows us to add spacing around objects to so that the border won't interfer with the content
+      <pre class="example-code"><code>
+        &lt;style>
+          .blue-box {
+            background-color: lightblue;
+            padding: 0px;
+            margin: 10px;
+            border: 10px;
+            border-style: dashed;
+            border-color: yellow;  
+          }
+          .red-box {
+            background-color: lightcoral;
+            padding: 0px;
+            margin: 10px;
+            border: 10px;
+            border-style: solid;
+            border-color: black;  
+          }
+        &lt;/style>
+      </code>
+      </pre>
+      <div class="example">
+        <div class="example-box red-box ex-margin-10 ex-border-10-solid">Red Content</div>
+        <div class="example-box blue-box ex-margin-10 ex-border-10-dashed">Blue Content</div>
+      </div>
 
-      <h3>Putting it all together</h3>
+      <p>
+        These borders look a little silly but they help show what is happening here. We can see that our margin has not changed but our content has gotten further apart. The new space is filled in with our border. Let's change them to something a bit more appealing and then try another trick with the border.
+      </p>
+
+      <pre class="example-code"><code>
+        &lt;style>
+          .blue-box {
+            background-color: lightblue;
+            padding: 0px;
+            margin: 10px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 5px;
+          }
+          .red-box {
+            background-color: lightcoral;
+            padding: 0px;
+            margin: 10px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;  
+            border-radius: 5px;
+          }
+        &lt;/style>
+      </code>
+      </pre>
+
+      <div class="example">
+        <div class="example-box red-box ex-margin-10 ex-border-2-radius">Red Content</div>
+        <div class="example-box blue-box ex-margin-10 ex-border-2-radius">Blue Content</div>
+      </div>
+
+      <p>Here you can see with used <code>border-radius</code> to add a curve to the corners of our boxes. The content still looks pretty cramped in our boxes so let's move on to padding and do something about that.</p>
+      
+      <h3>Padding</h3>
+      <p>Padding allows us to add spacing around objects to so that the border won't interfer with the content. So let's give our content some room to breathe.</p>
+
+      <pre class="example-code"><code>
+        &lt;style>
+          .blue-box {
+            background-color: lightblue;
+            margin: 10px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 5px;
+
+            padding-right: 20px;
+          }
+          .red-box {
+            background-color: lightcoral;
+            margin: 10px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;  
+            border-radius: 5px;
+
+            padding-bottom: 10px;
+          }
+        &lt;/style>
+      </code>
+      </pre>
+
+      <div class="example">
+        <div class="example-box red-box ex-margin-10 ex-border-2-radius ex-padding-10-bottom">Red Content</div>
+        <div class="example-box blue-box ex-margin-10 ex-border-2-radius ex-padding-20-right">Blue Content</div>
+      </div>
+
+      <p>So here we can see that we now have spacing to the right and to the bottom of our two boxes. We probably want padding all the way around the box however so let's change that. Also 10px and 20px both look like a little too much for our boxes so lets drop it back to 5px and see how it looks.</p>
+
+      <pre class="example-code"><code>
+        &lt;style>
+          .blue-box {
+            background-color: lightblue;
+            margin: 10px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 5px;
+
+            padding: 5px;
+          }
+          .red-box {
+            background-color: lightcoral;
+            margin: 10px;
+            border: 2px;
+            border-style: solid;
+            border-color: black;  
+            border-radius: 5px;
+
+            padding: 5px;
+          }
+        &lt;/style>
+      </code>
+      </pre>
+
+      <div class="example">
+        <div class="example-box red-box ex-margin-10 ex-border-2-radius ex-padding-5">Red Content</div>
+        <div class="example-box blue-box ex-margin-10 ex-border-2-radius ex-padding-5">Blue Content</div>
+      </div>
+      <p>Much better! Now we have a bit of spacing around our content so it is readable and highlighted by our sweet border with it's curved corners. We even have them spaced out from each other so they have some personal space and won't get upset with each other. With some small changes these could easily be a red and blue button that do something fun on your website.</p>
+      <p></p>
     </div>
+    <footer>
+
+    </footer>
   </body>
 </html>

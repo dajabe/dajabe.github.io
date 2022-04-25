@@ -120,7 +120,7 @@ nav {
   white-space: nowrap;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 640px) {
   #menu-bar {
     flex-direction: row;
     justify-content: center;
@@ -175,6 +175,12 @@ body {
   width: 80%;
   margin: 0px auto 0px auto;
   padding: 5px;
+}
+
+.blog-content-image {
+  max-width: 80%;
+  display: block;
+  margin: 10px auto 10px auto;
 }
 
 /* contact form */

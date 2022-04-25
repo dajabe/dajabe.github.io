@@ -1,0 +1,82 @@
+.example {
+  display:flex;
+  align-items: baseline;
+}
+
+.example-code {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  width: 80%;
+  display: block;
+  margin: 10px auto 10px auto;
+  border-radius: 10px;
+}
+
+p code {
+  background-color: rgb(199, 199, 199);
+}
+
+.example-box {
+  text-align: center;
+  font-weight: bold;
+  width: 200;
+  height: auto;
+}
+
+.no-padding-margin {
+  padding: 0px;
+  margin: 0px;
+}
+
+.blue-box {
+  background-color: lightblue;
+}
+
+.red-box {
+  background-color: lightcoral;
+}
+
+.ex-margin-10-right {
+  margin-right: 10px;
+}
+
+.ex-border-10-dashed {
+  border: 10px;
+  border-style: dashed;
+  border-color: yellow;  
+}
+
+.ex-border-10-solid {
+  border: 10px;
+  border-style: solid;
+  border-color: black;  
+}
+
+.ex-border-2-radius {
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.ex-margin-10 {
+  margin: 10px;
+}
+
+#ex-margin-box2 {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.ex-padding-10-bottom {
+  padding: 0px 0px 10px 0px;
+}
+
+.ex-padding-20-right {
+  padding: 0px 20px 0px 0px;
+}
+
+.ex-padding-5 {
+  padding: 5px;
+}
