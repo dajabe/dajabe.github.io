@@ -219,3 +219,14 @@ dd {
   text-align: left;
   margin: 5px 10px 5px 10px;
 }
+
+/* footer */
+.footer-divider {
+  width: 60%;
+}
+
+.footer-content {
+  width: 80%;
+  height: 200px;
+  text-align: right;
+}
