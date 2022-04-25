@@ -6,10 +6,16 @@
 .example-code {
   background-color: rgb(80, 80, 80);
   color: white;
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 10px auto 10px auto;
   border-radius: 10px;
+  overflow: scroll;
+  height: min-content;
+}
+
+code {
+
 }
 
 p code {

@@ -44,42 +44,42 @@
       </div>
       <p>Here is the code for the HTML that is used to display this. Simplified a little for this example this will work the same on your own webpage. The <code>div</code> tag used here is the element that we are using in the example but these techniques will work on all HTMl elements. We have given each it's own class so we can apply styles to them seperately.</p>
       <pre class="example-code"><code>
-        &lt;div class="red-box"&gt;Red Content&lt;/div&gt;
-        &lt;div class="blue-box"&gt;Blue Content&lt;/div&gt;
+&lt;div class="red-box"&gt;Red Content&lt;/div&gt;
+&lt;div class="blue-box"&gt;Blue Content&lt;/div&gt;
       </code></pre>
 
       <p>This is the style's that we have applied to these boxes. We have a section for all <code>div</code> elements and then two sections for specific divs one for our red box and one for our blue box.</p>
 
       <pre class="example-code"><code>
-        &lt;style>
-          div {
-            text-align: center;
-            font-weight: bold;
-          }
-          .blue-box {
-            background-color: lightblue;
-            padding: 0px;
-            margin: 0px;
-          }
-          .red-box {
-            background-color: lightcoral;
-            padding: 0px;
-            margin: 0px;
-          }
-        &lt;/style>
+&lt;style>
+  div {
+    text-align: center;
+    font-weight: bold;
+  }
+  .blue-box {
+    background-color: lightblue;
+    padding: 0px;
+    margin: 0px;
+  }
+  .red-box {
+    background-color: lightcoral;
+    padding: 0px;
+    margin: 0px;
+  }
+&lt;/style>
       </code>
       </pre>
       <p>
         Now we are going to give the red box a margin of 10 pixels. This is a fixed number of pixels on the screen that we want it to be spaced and we are going to apply this margin to the right hand side of the element.
       </p>
       <pre class="example-code"><code>
-        &lt;style>
-          .red-box {
-            background-color: lightcoral;
-            padding: 0px;
-            margin-right: 10px;
-          }
-        &lt;/style>
+&lt;style>
+  .red-box {
+    background-color: lightcoral;
+    padding: 0px;
+    margin-right: 10px;
+  }
+&lt;/style>
       </code>
       </pre>
       <div class="example">
@@ -89,18 +89,18 @@
       </div>
       <p>So you can see here that we now have a 10px gap between our blue content and our red content. It definitely makes it look a bit better so why don't we apply a 10px margin around all edges for both boxes.</p>
       <pre class="example-code"><code>
-        &lt;style>
-          .blue-box {
-            background-color: lightblue;
-            padding: 0px;
-            margin: 10px;
-          }
-          .red-box {
-            background-color: lightcoral;
-            padding: 0px;
-            margin: 10px;
-          }
-        &lt;/style>
+&lt;style>
+  .blue-box {
+    background-color: lightblue;
+    padding: 0px;
+    margin: 10px;
+  }
+  .red-box {
+    background-color: lightcoral;
+    padding: 0px;
+    margin: 10px;
+  }
+&lt;/style>
       </code>
       </pre>
       <div class="example">
@@ -116,24 +116,24 @@
         Next we are going to tackle borders as it will make it easier for us to see the changes we make with our padding. Borders have a default size of 0px but you can set the size of the border to any width you like. Let's give our border a width of 10px and a solid style for the red and dashed for the blue. We have to specify a color for the border as well and we'll do that with <code>border-color</code>. 
       </p>
       <pre class="example-code"><code>
-        &lt;style>
-          .blue-box {
-            background-color: lightblue;
-            padding: 0px;
-            margin: 10px;
-            border: 10px;
-            border-style: dashed;
-            border-color: yellow;  
-          }
-          .red-box {
-            background-color: lightcoral;
-            padding: 0px;
-            margin: 10px;
-            border: 10px;
-            border-style: solid;
-            border-color: black;  
-          }
-        &lt;/style>
+&lt;style>
+  .blue-box {
+    background-color: lightblue;
+    padding: 0px;
+    margin: 10px;
+    border: 10px;
+    border-style: dashed;
+    border-color: yellow;  
+  }
+  .red-box {
+    background-color: lightcoral;
+    padding: 0px;
+    margin: 10px;
+    border: 10px;
+    border-style: solid;
+    border-color: black;  
+  }
+&lt;/style>
       </code>
       </pre>
       <div class="example">
@@ -146,26 +146,26 @@
       </p>
 
       <pre class="example-code"><code>
-        &lt;style>
-          .blue-box {
-            background-color: lightblue;
-            padding: 0px;
-            margin: 10px;
-            border: 2px;
-            border-style: solid;
-            border-color: black;
-            border-radius: 5px;
-          }
-          .red-box {
-            background-color: lightcoral;
-            padding: 0px;
-            margin: 10px;
-            border: 2px;
-            border-style: solid;
-            border-color: black;  
-            border-radius: 5px;
-          }
-        &lt;/style>
+&lt;style>
+  .blue-box {
+    background-color: lightblue;
+    padding: 0px;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+  }
+  .red-box {
+    background-color: lightcoral;
+    padding: 0px;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;  
+    border-radius: 5px;
+  }
+&lt;/style>
       </code>
       </pre>
 
@@ -180,28 +180,28 @@
       <p>Padding allows us to add spacing around objects to so that the border won't interfer with the content. So let's give our content some room to breathe.</p>
 
       <pre class="example-code"><code>
-        &lt;style>
-          .blue-box {
-            background-color: lightblue;
-            margin: 10px;
-            border: 2px;
-            border-style: solid;
-            border-color: black;
-            border-radius: 5px;
+&lt;style>
+  .blue-box {
+    background-color: lightblue;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
 
-            padding-right: 20px;
-          }
-          .red-box {
-            background-color: lightcoral;
-            margin: 10px;
-            border: 2px;
-            border-style: solid;
-            border-color: black;  
-            border-radius: 5px;
+    padding-right: 20px;
+  }
+  .red-box {
+    background-color: lightcoral;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;  
+    border-radius: 5px;
 
-            padding-bottom: 10px;
-          }
-        &lt;/style>
+    padding-bottom: 10px;
+  }
+&lt;/style>
       </code>
       </pre>
 
@@ -213,28 +213,28 @@
       <p>So here we can see that we now have spacing to the right and to the bottom of our two boxes. We probably want padding all the way around the box however so let's change that. Also 10px and 20px both look like a little too much for our boxes so lets drop it back to 5px and see how it looks.</p>
 
       <pre class="example-code"><code>
-        &lt;style>
-          .blue-box {
-            background-color: lightblue;
-            margin: 10px;
-            border: 2px;
-            border-style: solid;
-            border-color: black;
-            border-radius: 5px;
+&lt;style>
+  .blue-box {
+    background-color: lightblue;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
 
-            padding: 5px;
-          }
-          .red-box {
-            background-color: lightcoral;
-            margin: 10px;
-            border: 2px;
-            border-style: solid;
-            border-color: black;  
-            border-radius: 5px;
+    padding: 5px;
+  }
+  .red-box {
+    background-color: lightcoral;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;  
+    border-radius: 5px;
 
-            padding: 5px;
-          }
-        &lt;/style>
+    padding: 5px;
+  }
+&lt;/style>
       </code>
       </pre>
 
