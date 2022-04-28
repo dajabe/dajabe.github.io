@@ -211,7 +211,8 @@ dt {
   text-decoration: underline;
   font-weight: bold;
   flex-basis: 30%;
-  text-align: right;
+  flex-grow: 1;
+  text-align: left;
   margin: 5px 10px 5px 10px;
 }
 
@@ -231,4 +232,11 @@ dd {
   width: 80%;
   height: 200px;
   text-align: right;
+}
+
+@media screen and (min-width: 500px) {
+  dt {
+    text-align: right;
+  }
+  
 }
