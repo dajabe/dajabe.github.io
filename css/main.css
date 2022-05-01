@@ -185,6 +185,22 @@ body {
   margin: 10px auto 10px auto;
 }
 
+/* Buttons */
+
+.button__colour-toggle {
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1vw;
+}
+
+.button--red {
+  background-color: red;
+}
+
 /* contact form */
 
 .contact-form {

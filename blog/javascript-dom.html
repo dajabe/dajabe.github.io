@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript and the DOM</title>
     <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/example.css" rel="stylesheet" type="text/css">
+    <script src="../js/js-dom-example.js"></script>
   </head>
   
   <body>
@@ -14,12 +16,117 @@
       <h3 class="back-link"> <a href="index.html">&#8617; Blogs</a></h3>
       <h3 id="publish-date">1 May 2022</h3>
     </header>
-    <div id="content">
-      <h2></h2>
+    <div id="blog-content">
+      <h2>What is JavaScript?</h2>
       
       <p>
-        
+        JavaScript is to HTML and CSS like the mechanical systems of a car are to it's frame and body work. HTMl is like the frame which decides the overall shape and size of the car. CSS is the body work and the trim and dictate the overall style of the vehicle. While JavaScript is the electronics, engine, running gear, and mechanical systems which provide the actual functionality of the vehicle.
       </p>
+      <h2>Flow control and loops</h2>
+      <p>
+        When using any programming language they have a thing called control flow, which is often made up of loops or conditional statements. I'm going to use the example of putting out the rubbish to make a real world example of control flow.
+      </p>
+      <h3>Check which day it is.</h3>
+      <p>
+        This is our first statement. What day is it? Is it council rubbish collection day or is it just a regular day of the week? This gives us our first if statement. If it is collection day then we want to get all rubbish out on the street for collection.
+      </p>
+      <p>
+        So next we define what happens when it is collection day. We might collect all the rubbish from around the house into a single bag or bin that goes on the street. So this creates our first for loop in the example. Here we say for each rubbish bin in the house do this action.
+      </p>
+      <ul>
+        <li>Check if bin has rubbish in it</li>
+        <li>If bin is already empty move on to next bin</li>
+        <li>If bin needs emptying, take bin liner out of bin</li>
+        <li>Put new bin liner in bin</li>
+        <li>Take old bin liner and add it to council rubbish bag/bin</li>
+        <li>Go to next bin and start list from the top again until there are no more bins to check.</li>
+      </ul>
+      <p>
+        Notice here that we have another if statement at the start of our loop. We check to see if the bin has rubbish and needs emptying. If it doesn't we simply move on to the next bin. These are conditional statements that change the flow of our instructions depending on what is happening.
+      </p>
+      <p>Once we have checked all the bins around the house we need to take the trash out to the road. Since we put all the trash in to the main trash bag/bin our command is simple. Take bin/bag to road side. As you can see with the control flow of our list we don't always follow the document from top to bottom. Our last item on the list has us jump back to a previous step and execute the same steps all over again but on a different object. This is programmers instruct computers to behave in certain ways depending on what is happening.</p>
+
+      <h2>The DOM and interacting with it</h2>
+      <p>
+        The DOM stands for Document Object Model. This defines how a webpage is structured. You have your document which is the page itself and then the different elements on that page, then each element might have a bunch of different features like specific styles relating to spacing and colours. The DOM is used in JavaScript to select specific elements on a page and make changes to them. Let's say you have a button that when you click it it changes colour.
+      </p>
+      <p>First you might define your button like this:</p>
+      <pre class="example-code"><code>
+&lt;style>
+.button__colour-toggle {
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1vw;
+&lt;/style>
+
+&lt;button id='toggle--button' class="button__colour-toggle">Button&lt;/button>
+        </code>
+        </pre>
+      <p>
+        This gives us a button like this, which currently does nothing:
+      </p>
+      <button class="button__colour-toggle">Button</button>
+      <p>
+        We can then use some code like this here to apply a new class to the button when it is pressed. We will make the action toggle so that pressing it turns the class on and off. Here is our code:
+      </p>
+      <pre class="example-code"><code>
+      function toggleButton() {
+        document.getElementById('toggle--button').classList.toggle('button--red')
+      }
+      
+      document.getElementById('toggle--button').onclick = toggleButton
+    </pre></code>
+    <p>And now our button works when we click it. Give a try!</p>
+      <button id='toggle--button' class="button__colour-toggle">Button</button>
+      <p>
+        So what is happening here? What do these lines mean?
+      </p>
+      <p>
+        The first thing we have is <code>document</code>. This refers to the page itself and is a top level item in the DOM. Next we have <code>getElementById('toggle--button')</code> which is a special function to selects an element by the ID we have assigned to it. In the first piece of code I showed we saw a <code>id='toggle--button'</code> set in our button HTML element. We use the <code>classList</code> function for the HTML element selected to say we want to access the CSS classes assigned here. Then lastly we use <code>toggle('button--red')</code> to then add and remove the CSS class <code>.button--red</code> to our HTML element.
+      </p>
+      <h2>Data in an array vs objects</h2>
+      <p>
+        With JavaScript the main difference in accessing data in an array vs an object comes down to how that data is referenced. An array is simply a list of data, this list can be strings, numbers, booleans, objects, or even other arrays. Here is an example of an array of fruit:
+      </p>
+      <pre class="example-code"><code>
+let fruit = ['banana', 'orange', 'mango', 'pineapple']
+      </code></pre>
+      <p>
+        This array has four items in it and we would access it by using the number for each item starting from 0. So fruit[0] is equal to 'banana' and fruit[3] is equal to 'pineapple'.
+      </p>
+      <p>
+        Objects can hold all the same sorts of data as an array but they are arranged differently. Each item in an object has a <code>key</code> and a <code>value</code>. Here is an example of an object which is defining a character.
+      </p>
+      <pre class="example-code"><code>
+let character = {
+  name: 'Billy',
+  fruit: 'Mango',
+  ability: 'Endurance',
+  level: 10,
+  pet: 'Fluffy'
+}
+      </code></pre>
+      <p>
+        So instead of accessing items based off their number we use their key. We can do something like <code>character.name</code> and this will tell us that the characters name is "Billy". Or we can use a slightly different notation like <code>character['pet']</code> which will tell us that our characters pet's name is "Fluffy"
+      </p>
+
+      <h2>Functions are super helpful</h2>
+      <p>
+        Functions are small portions of code that we use frequently. Any time that a piece of code is going to need to but run in different ways or for different things we will write a function. You can think of functions as building blocks for programmers. The difference is that you can make your own building blocks in any shape you like which is why they are so powerful and helpful.
+      </p>
+      <p>
+        A simple example of a function is one that will add two numbers together. We would write this function like this:
+      </p>
+      <pre class="example-code"><code>
+function sum(num1, num2) {
+  return num1 + num2
+}
+      </code></pre>
+      <p>This is a simple function not something that would be very useful but it works well to serve our example. The function takes two inputs which are numbers and then returns you the sum of those two numbers. To demonstrate if you called <code>sum(3,4)</code> you would get the result of 7 and <code>sum(10,12)</code> would give the result of 22.</p>
     </div>
     <footer>
       <hr class="footer-divider">

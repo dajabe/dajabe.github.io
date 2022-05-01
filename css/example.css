@@ -10,7 +10,7 @@
   display: block;
   margin: 10px auto 10px auto;
   border-radius: 10px;
-  overflow: scroll;
+  overflow: auto;
   height: min-content;
 }
 
