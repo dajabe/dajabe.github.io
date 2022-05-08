@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <header class="blog-header">
+      <h1 id="blog-title">Problem Solving</h1>
+      <h3 class="back-link"> <a href="index.html">&#8617; Blogs</a></h3>
+      <h3 id="publish-date">8 May 2022</h3>
+    </header>
+    <div id="blog-content">
+      <h2>Overcoming blocks</h2>
+      <p>
+        Blocks are common when it comes to problem solving and they aren't always caused by complicated problems.
+        Sometimes you are working on a problem for longer than you expect and you find the solution. This is a great
+        feeling and you just put it all together ready to finally solve this and move on to the next thing. Then BAM!
+        your solution fails testing.
+      </p>
+      <p>
+        This is a frustrating moment when you're so close to the finish line but your code is failing. You've been
+        going for long enough that the brain drain is very much in effect. Now a common solution here is to take a 
+        break which would be the wise option to take. If you're stubborn like me you may decide that you will finish
+        this before you let yourself up for a break.
+      </p>
+      <p>
+        At this point I had already done a lot of research on the problem so first thing I did was go back to my 
+        documentation. Had I missed something? From this I performed the "try something" method. I rearranged how
+        the code was written, "console.logged" some results and still no luck. I was very stuck and frustrated about
+        my solution that should work not working.
+      </p>
+      <p>
+        I reiterated over the code several times. Astute readers will note that there is a specific troubleshooting
+        step that I have not yet mentioned. What I had failed to do in my frustration was read the error code
+        thoroughly. What was happening is where I wanted a specific item in an object I was instead getting the 
+        object in it's entirety. Essentially I had missed adding two parenthesis () on the end of call for a method.
+      </p>
+      <p>
+        There are many other examples of blocks getting in the way but I believe this one highlights how it is easy
+        to get caught in the details and miss fundamentals. I would have saved myself 10 min of frustration if 
+        I had taken that short break and then come back with fresh eyes and checked over the fundamentals.
+      </p>
+      
+      <h2>Elegant solutions</h2>
+      <p>
+        There is no better moment than nailing an elegant solution. All the pieces fall into place and your solution
+        is the star of the show. I had this feeling recently when I was tackling our JavaScript Methods challenge.
+        For the challenge we have to write some functions that demonstrate built-in methods for JavaScript and output
+        the results to the terminal. I wanted to be able to have a tidy easy to read solution for formatting and
+        explaining the output.
+      </p>
+      <p>
+        The first thing I do when creating a solution is research. First in understanding the problem we are trying 
+        to solve and second in what potential solutions already exist. In practice for this situation the methods I 
+        used were "trying something" and then "googling". I identified key text strings that would be need to be
+        output. The text strings were a title, the intro, headings for the different methods being demonstrated, and
+        a seperator.
+      </p>
+      <p>
+        This made outputting what I needed at different points of the program easy but I also wanted the code to be
+        easy to read. I discovered that JavaScript has something called 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">
+          Template literals</a> which allow elegant insertion of functions and variables in a text string. This means
+        that instead of typing <code>"some string " + someVar + " some other string"</code> or even worse 
+        <code>var1 + " " + var2</code> we can do something like <code>`some string ${someVar} some other string`</code>
+        or <code>`${var1} ${var2}</code> which is in this authors opinion much easier to read.
+      </p>
+      <p>
+        The second part of the solution comes from understanding how to escape special functions within strings. What
+        I needed here was a new line character so that we don't have to string multiple console.log() calls one after
+        another. This is simply achieved by using <code>\n</code> in your string.
+      </p>
+      <p>
+        The final piece of my puzzle was a simple funtion I wrote to output nice headings surrounded by seperators.
+        The just takes the heading name variable and then returns it with the seperator before and after it. The 
+        seperator includes some newline declarations to keep the formating nice. This means I can start my program
+        with the following code which also indicates the first method being demonstrated:
+      </p>
+      <img src="../img/blog_problem-solving__output-setup.png" alt="Setup for nicely formatted output">
+      <p>
+        Then I can declare the second method while also outputting the last of the first method:
+      </p>
+      <img src="../img/blog_problem-solving__output-example.png" alt="Second heading output example">
+      <p>
+        You could certainly go a little more in-depth here but this solution is simple, elegant and to the point.
+        The output of a run through of the program looks like this: 
+      </p>
+      <img src="../img/blog_problem-solving__output-result.png" alt="Output of the program with formatting">
+      <h2>Problem solving techniques</h2>
+      <p>
+        Over the last week of the course I have been learning about problem solving techniques. Some of these I am
+        already familiar with and reviewing them has helped deepen my understanding. Other techniques are new and
+        exciting as they add new tools to my troubleshooting kit.
+      </p>
+      <dl>
+        <dt>Pseudocode</dt>
+        <dd>
+          This is something that I haven't used much though I am familiar with it. I have seen it more as examples
+          than using it myself to troubleshoot or design solutions. while I have not used it extensively I'm 
+          confident in applying it as I have a good grasp of the concept.
+        </dd>
+        <dt>Trying something</dt>
+        <dd>
+          This is a fun one and I think rightfully so my confidence with this method depends on the situation. If
+          the situation is low or no consequences for mistakes then I'm very happy to deploy this method to act on
+          hunches for a solution. The usefulness of this is why dev environments or sandboxes are useful and important
+          to any robust well maintained solution.
+        </dd>
+        <dt>Rubber ducky method</dt>
+        <dd>
+          The name for this method was something new to me. I can't recollect a scenario where I have employed this
+          specifically to solve an issue but I can definitely see it's value especially if I find myself reaching out
+          to a mentor for help too often. i.e. where I had just worked through it out loud I might have solved it on
+          my own.
+        </dd>
+        <dt>Reading error messages</dt>
+        <dd>
+          This is an important one and I feel like I have spent a long time patiently explaining to users that if they
+          take a moment to read what is on the screen the computer is usually trying very hard to tell them what the
+          problem actually is. I'm confident with employing this method.
+        </dd>
+        <dt>Console.logging</dt>
+        <dd>
+          This one is a favourite of mine. Sometimes you just need to know what is happening to a specific object at
+          a specific point in the program. Console.log has got your back.
+        </dd>
+        <dt>Googling</dt>
+        <dd>
+          I bleed pixels and the google foo is strong with me.
+        </dd>
+        <dt>Asking your peers for help</dt>
+        <dd>
+          Asking for help is an area I personally struggle in. I have a tendency to get too caught up or worried about
+          what people will think of me. This is a focus point that I want to work on during this course.
+        </dd>
+        <dt>Asking coaches for help</dt>
+        <dd>
+          Much the same as above. I believe my ability to ask for help is good and I usually form good questions when
+          I do get over my insecurities and actually ask for help.
+        </dd>
+        <dt>Improving your process with reflection</dt>
+        <dd>
+          This is my other primary working point in this course. I feel I reflect well when I do but I'm inconsistent
+          and not very good at remembering to actually write down my reflections. When I actually do it I am happy with
+          the results.
+        </dd>
+      </dl>
+    </div>
+
+    <footer>
+      <hr class="footer-divider">
+      <div class="footer-content">
+        <small>&copy; Copyright 2022, Dajabe - David Benton</small>
+      </div>
+    </footer>
+  </body>
+</html>
