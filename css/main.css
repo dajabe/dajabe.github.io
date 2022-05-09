@@ -239,6 +239,20 @@ dd {
   margin: 5px 10px 5px 10px;
 }
 
+.blog-dl {
+  width: 80%;
+}
+
+.blog-dl dt {
+  flex-basis:auto;
+  flex-grow: 0;
+  margin: 5px 10px 5px 1.5vw;
+}
+
+.blog-dl dd {
+  margin: 5px 10px 5px 10px;
+}
+
 /* footer */
 .footer-divider {
   width: 60%;
