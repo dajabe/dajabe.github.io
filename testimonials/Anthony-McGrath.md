@@ -1,0 +1,3 @@
+How to describe Dave? He is a man of many facets. He is driven to succeed in whatever he tries to do, while also taking a seemingly laid back approach to life. An avid problem solver and able to dig into the fine details to uncover what he doesn’t understand. Always willing to jump in the deep end trusting he will figure out how to swim even if he doesn’t know. 
+
+He is his own biggest critic and judges himself based on his own impossible standards for himself, but when judged by a realistic measure he is usually trending above and beyond. Dave is an inspiration on being cool under pressure, able to crack a joke even under the most stressful situations. Daves biggest opportunity for growth lies in understanding his own value and learning to cut himself some slack.
