@@ -32,9 +32,29 @@ header {
   align-items: center;
 }
 
+.title {
+  margin-left: 20px;
+}
+
 .content {
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 20px;
 
   background-color: rgb(22, 34, 37);
+}
+
+.section {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(240, 248, 255, 0.3);
+}
+
+
+.section a:link, .section a:visited {
+  color: aliceblue;
+}
+
+.section a:hover, .section a:active {
+  color: rgb(39, 245, 20);
 }

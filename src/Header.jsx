@@ -13,7 +13,7 @@ export default function Header() {
       >
         <img src={logo} className="main-logo" alt="logo" />
       </a>
-      <h1>Hello World!</h1>
+      <h1 className="title">Hello World!</h1>
     </header>
   )
 }
