@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dajabe.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/dajabe.github.io/static/js/main.3d53e37f.js",
-    "static/js/787.bf77b27b.chunk.js": "/dajabe.github.io/static/js/787.bf77b27b.chunk.js",
-    "static/media/logo.svg": "/dajabe.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/dajabe.github.io/index.html",
-    "main.073c9b0a.css.map": "/dajabe.github.io/static/css/main.073c9b0a.css.map",
-    "main.3d53e37f.js.map": "/dajabe.github.io/static/js/main.3d53e37f.js.map",
-    "787.bf77b27b.chunk.js.map": "/dajabe.github.io/static/js/787.bf77b27b.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.84a42d42.js",
+    "static/js/787.bf77b27b.chunk.js": "/static/js/787.bf77b27b.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.84a42d42.js.map": "/static/js/main.84a42d42.js.map",
+    "787.bf77b27b.chunk.js.map": "/static/js/787.bf77b27b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.3d53e37f.js"
+    "static/js/main.84a42d42.js"
   ]
 }
