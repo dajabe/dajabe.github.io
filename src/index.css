@@ -15,7 +15,7 @@ code {
 }
 
 .main-logo {
-  margin: 10px;
+  margin: 10px 20px;
   height: 100px;
 }
 
@@ -30,10 +30,29 @@ header {
   width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.contact {
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact--links {
+  display: flex;
+}
+
+.contact--links img {
+  margin: 5px;
+}
+.contact--logo {
+  height: 30px;
 }
 
 .title {
-  margin-left: 20px;
+  margin: 30px 20px;
 }
 
 .content {

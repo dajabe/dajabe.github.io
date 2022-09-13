@@ -7,10 +7,10 @@ export default function Content() {
         <h2>About me</h2>
         <p>
           There is nothing quite like the feeling of successfully find the
-          resolution to a particularly tricky problem. The rush you feel when
-          you crack and especially tricky problem, the sense of satisfaction
-          that stays with you whenever you get to see your solution at work.
-          This is often the fuel that drives me through life.
+          resolution to a problem. The rush you feel when you crack an
+          especially tricky problem, the sense of satisfaction that stays with
+          you whenever you get to see your solution at work. This is often the
+          fuel that drives me through life.
         </p>
         <p>
           I love using my curiosity to help me solve problems. I want to know
