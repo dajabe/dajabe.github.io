@@ -1,7 +1,7 @@
 {
   "name": "dajabe.github.io",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/dajabe.github.io",
+  "homepage": "https://dajabe.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
