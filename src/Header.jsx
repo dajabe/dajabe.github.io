@@ -18,7 +18,7 @@ export default function Header() {
       </a>
       <h1 className="title">Hello World!</h1>
       <div className="contact">
-        <span>Where to find me</span>
+        <span>Find me on</span>
         <div className="contact--links">
           <a
             href="https://github.com/dajabe"
