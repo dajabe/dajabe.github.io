@@ -6,11 +6,19 @@ export default function Content() {
       <div className="section">
         <h2>About me</h2>
         <p>
-          There is nothing quite like the feeling of successfully find the
-          resolution to a problem. The rush you feel when you crack an
-          especially tricky problem, the sense of satisfaction that stays with
-          you whenever you get to see your solution at work. This is often the
-          fuel that drives me through life.
+          Hi i'm David and this is where I write about myself and the things I
+          do. I'm an open source enthusiast and consider myself a life long
+          student. With 10 years of experience in the tech support sector I
+          transitioned into writing software. My goal here is to be involved in
+          the design and creation of the tools that enable people to do their
+          best work.
+        </p>
+        <p>
+          There is nothing quite like the feeling of finding the resolution to a
+          problem. The rush you feel when you crack an especially tricky
+          problem, the sense of satisfaction that stays with you whenever you
+          get to see your solution at work. This is often the fuel that drives
+          me through life.
         </p>
         <p>
           I love using my curiosity to help me solve problems. I want to know
@@ -27,7 +35,7 @@ export default function Content() {
       </div>
       <div className="section">
         <a href="https://github.com/thyme-to-code/thyme-is-money">
-          <h2>Project: Thyme is Money</h2>
+          <h2>Project - Thyme is Money</h2>
         </a>
         <p>
           My final project at Dev Academy. Designed together with Adam, Nicole,

@@ -16,7 +16,7 @@ code {
 
 .main-logo {
   margin: 10px 20px;
-  height: 100px;
+  width: 70px;
 }
 
 .main {
@@ -53,6 +53,7 @@ header {
 
 .title {
   margin: 30px 20px;
+  font-size: calc(1vw + 1vh + 2vmin);
 }
 
 .content {
