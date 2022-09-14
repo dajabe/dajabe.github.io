@@ -7,7 +7,7 @@ export default function Content() {
         <h2>About me</h2>
         <p>
           Hi i'm David and this is where I write about myself and the things I
-          do. I'm an open source enthusiast and consider myself a life long
+          do. I'm an open source enthusiast and consider myself a life-long
           student. With 10 years of experience in the tech support sector I
           transitioned into writing software. My goal here is to be involved in
           the design and creation of the tools that enable people to do their
@@ -22,15 +22,14 @@ export default function Content() {
         </p>
         <p>
           I love using my curiosity to help me solve problems. I want to know
-          more about the problem and then more about potential solutions. Till I
-          get enough of the right pieces together to present a solution. Then
-          finding the right way to present the solution so that it is understood
-          and effectively implimented.
+          more about the problem till I get enough of the right pieces together
+          to present a solution. The final step is communicating the solution in
+          a clear way to enable practical implementation.
         </p>
         <p>
-          When I'm not solving problems for those in my life or learning new
-          things. I'm renovating my house, experimenting with home automation,
-          3D printing, getting involved in community sports and walking my dogs.
+          When I'm not problem-solving or learning new things. I'm renovating my
+          house, experimenting with home automation, 3D printing, getting
+          involved in community sports and walking my dogs.
         </p>
       </div>
       <div className="section">
